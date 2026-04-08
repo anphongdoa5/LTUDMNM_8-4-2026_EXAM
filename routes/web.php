@@ -2,15 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OpenRouterController;
-<<<<<<< HEAD
 
 
-=======
 use App\Http\Controllers\MovieController2;
->>>>>>> nguyet
 Route::get('/', [App\Http\Controllers\MovieController::class, 'index']);
 Route::get('/openrouter', [OpenRouterController::class, 'chat']);
-<<<<<<< HEAD
 
 
 use App\Http\Controllers\MovieController3;
@@ -21,8 +17,6 @@ Route::get('/the-loai/{id}', [App\Http\Controllers\MovieController::class, 'getM
 Route::get('/movie/{id}', [App\Http\Controllers\MovieController::class, 'detail'])->name('movie.detail');
 Route::post('/timkiem', [MovieController::class, 'search']);
 
-=======
 Route::get('/movies', [MovieController2::class, 'index']);
 Route::get('/movies/delete/{id}', [MovieController2::class, 'delete']);
 Route::get('/movies/{id}', [MovieController2::class, 'show']);
->>>>>>> nguyet
