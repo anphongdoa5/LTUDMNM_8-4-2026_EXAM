@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <x-movie-layout>
     <x-slot name="title">
         Trang chủ - Danh sách phim
