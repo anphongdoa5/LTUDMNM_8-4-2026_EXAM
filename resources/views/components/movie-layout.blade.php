@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="{{asset('library/jquery-3.7.1.js')}}" ></script>
         <style>
-            /* Định dạng màu nền và màu chữ của menu */
+
           
             .list-movie
             {
@@ -41,8 +41,8 @@
                 width:100%;
                 max-width:1200px;
                 max-height:200px;
-                height:65vh;
-                background-image:url('{{asset('images/banner.jpg')}}');
+                height: 200px;
+                background-image:url("{{asset('images/hero-bg.jpg')}}");
                 background-size:cover;
                 color:white;
                 margin:0 auto;
@@ -112,7 +112,9 @@
                     </div>
                     <ul class="list-group list-group-flush list-group-movie">
                        @foreach($genre as $row)
-                       <a href="{{url('/theloai/'.$row->id)}}">{{$row->genre_name_vn}}</a>
+                       <a href="{{ url('/the-loai/' . $row->id) }}">
+                        {{ $row->genre_name_vn }}
+                        </a>
                        @endforeach
                     </ul>
                     </div>
